@@ -1,0 +1,56 @@
+/* Additional custom styles that might be hard to achieve with Tailwind alone */
+
+/* Loader animation */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loader.dark {
+  background-color: #122620;
+}
+
+.loader-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navbar scroll effect */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+/* Carousel styling */
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  white-space: nowrap;
+  transition: transform 0.5s ease;
+}
+
+/* Smooth page transitions */
+.page-transition-enter {
+  opacity: 0;
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
