@@ -55,12 +55,12 @@ const Navbar = () => {
           ))}
           
           {/* Theme Toggle */}
-          <ThemeToggle />
+          {/** <ThemeToggle /> **/}
         </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
-          <ThemeToggle />
+          {/** <ThemeToggle /> **/}
           <button
             onClick={toggleMenu}
             className="ml-4 text-primary2 dark:text-primary3 focus:outline-none"

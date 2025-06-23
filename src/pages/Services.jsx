@@ -19,91 +19,96 @@ const countries = [
 const services = [
   {
     id: 1,
-    title: 'University Applications',
-    description: 'We handle your complete university application process including:',
+    title: 'Personalized Counselling',
+    description: 'One-on-one sessions to understand your goals, strengths, and aspirations, ensuring tailored guidance for your study abroad journey.',
     details: [
-      'Profile evaluation and university shortlisting',
-      'Application form filling and submission',
-      'Essay and SOP review and editing',
-      'Recommendation letter guidance',
-      'Interview preparation',
-      'Scholarship application assistance'
+      'In-depth profile assessment',
+      'Goal and interest mapping',
+      'Expert advice on academic and career planning',
+      'Continuous support throughout your journey',
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 7v-6m0 6a9 9 0 110-18 9 9 0 010 18z" />
       </svg>
     ),
   },
   {
     id: 2,
-    title: 'Visa Assistance',
-    description: 'Our visa experts ensure a smooth application process with:',
+    title: 'College & Country Shortlisting',
+    description: 'Get matched with the best-fit colleges and countries based on your profile, preferences, and career ambitions.',
     details: [
-      'Document preparation and verification',
-      'Visa application form completion',
-      'Financial documentation guidance',
-      'Mock visa interview sessions',
-      'Visa fee payment assistance',
-      'Follow-up with embassy/consulate'
+      'Personalized college and country recommendations',
+      'Analysis of academic, financial, and lifestyle fit',
+      'Guidance on application requirements and deadlines',
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4" />
       </svg>
     ),
   },
   {
     id: 3,
-    title: 'SOP & Documentation Help',
-    description: 'We assist in creating compelling application documents:',
+    title: 'SOP, LOR & Resume Support',
+    description: 'Expert help in crafting compelling Statements of Purpose, Letters of Recommendation, and professional resumes.',
     details: [
-      'Statement of Purpose (SOP) drafting and review',
-      'Personal statement guidance',
-      'CV/Resume preparation',
-      'Academic document authentication',
-      'Portfolio development (for arts/design programs)',
-      'Document translation services'
+      'SOP brainstorming, drafting, and editing',
+      'LOR content guidance and structure',
+      'Resume/CV review and optimization',
+      'Personalized feedback for every document',
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16h8M8 12h8m-8-4h8M4 6h16M4 10h16M4 14h16M4 18h16" />
       </svg>
     ),
   },
   {
     id: 4,
-    title: 'Country/College Selection',
-    description: 'We help you find the perfect educational fit through:',
+    title: 'Application Filing & Admission Help',
+    description: 'Step-by-step assistance with application forms, document uploads, and communication with universities.',
     details: [
-      'Career counseling and goal assessment',
-      'Country selection based on your preferences',
-      'University/college shortlisting',
-      'Program selection guidance',
-      'Cost-benefit analysis of options',
-      'Campus culture and lifestyle information'
+      'Application form filling and review',
+      'Document checklist and uploads',
+      'Tracking application status',
+      'Support for admission queries and follow-ups',
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
       </svg>
     ),
   },
   {
     id: 5,
-    title: 'Financial & Scholarship Guidance',
-    description: 'We provide comprehensive financial planning assistance:',
+    title: 'Visa Filing & Interview Prep',
+    description: 'Comprehensive support for your visa application and interview preparation to maximize approval chances.',
     details: [
-      'Scholarship and grant research',
-      'Education loan guidance',
-      'Financial documentation preparation',
-      'Budget planning for studying abroad',
-      'Part-time work opportunity information',
-      'Cost-saving strategies'
+      'Visa document preparation and verification',
+      'Mock interview sessions',
+      'Guidance on financial and legal requirements',
+      'Updates on latest visa rules and policies',
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7.67 7.165 6 9.388 6 12v2.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+      </svg>
+    ),
+  },
+  {
+    id: 6,
+    title: 'Info Sessions & Walk-in Workshops',
+    description: 'Interactive sessions and workshops to keep you informed and prepared for every step of your journey.',
+    details: [
+      'Regular info sessions on trending topics',
+      'Walk-in workshops for hands-on guidance',
+      'Q&A with experts and alumni',
+      'Networking opportunities with peers',
+    ],
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
   },
@@ -113,43 +118,33 @@ const services = [
 const processSteps = [
   {
     id: 1,
-    title: 'Initial Consultation',
-    description: 'Free consultation to understand your goals, preferences, and academic background.',
+    title: 'Discover',
+    description: 'Explore global education opportunities and get inspired for your study abroad journey.',
   },
   {
     id: 2,
-    title: 'Profile Evaluation',
-    description: 'Assessment of your academic credentials, work experience, and extracurricular activities.',
+    title: 'Profile & Planning',
+    description: 'We assess your academic background, interests, and goals to create a personalized roadmap.',
   },
   {
     id: 3,
-    title: 'Country & University Selection',
-    description: 'Personalized recommendations based on your profile, budget, and career aspirations.',
+    title: 'One-on-One Counselling',
+    description: 'Receive expert, individualized guidance to help you make informed decisions at every step.',
   },
   {
     id: 4,
-    title: 'Application Preparation',
-    description: 'Assistance with application forms, SOPs, essays, and other required documents.',
+    title: 'Application Support',
+    description: 'Get comprehensive help with applications, documents, and deadlines for your chosen programs.',
   },
   {
     id: 5,
-    title: 'Application Submission',
-    description: 'Timely submission of applications to selected universities.',
+    title: 'Visa & Offer Guidance',
+    description: 'Navigate the visa process and university offers with confidence, backed by our expert support.',
   },
   {
     id: 6,
-    title: 'Offer Acceptance',
-    description: 'Guidance on evaluating offers and selecting the best option.',
-  },
-  {
-    id: 7,
-    title: 'Visa Processing',
-    description: 'Complete assistance with visa application and interview preparation.',
-  },
-  {
-    id: 8,
-    title: 'Pre-Departure Guidance',
-    description: 'Information on accommodation, travel, insurance, and what to expect abroad.',
+    title: 'Pre-Departure & Settling In',
+    description: 'Prepare for your move abroad and get support for a smooth transition and successful start.',
   },
 ];
 
@@ -178,7 +173,9 @@ const Services = () => {
           >
             <h1 className="text-4xl md:text-5xl font-bold text-primary2 dark:text-primary1 mb-6">Our Services</h1>
             <p className="text-lg md:text-xl text-gray-700 dark:text-primary3/90 max-w-3xl mx-auto">
-              Comprehensive guidance and support for every step of your overseas education journey.
+              We offer in-person services because we believe real conversations spark real clarity. You're
+              welcome to walk into our office, sit down with an expert, and start mapping out your future
+              —on your terms.
             </p>
           </motion.div>
         </div>
@@ -243,6 +240,42 @@ const Services = () => {
                 )}
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Services Section - Creative Version */}
+      <section className="section bg-gradient-to-br from-primary3/10 via-white to-primary1/10 dark:from-primary2/60 dark:via-primary2/80 dark:to-primary3/20 py-20">
+        <div className="container-custom">
+          <div className="flex flex-col items-center mb-10">
+            <span className="inline-block bg-yellow-400 text-primary2 text-xs font-bold px-3 py-1 rounded-full mb-3 animate-bounce shadow">Coming Soon</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary2 dark:text-primary1 mb-2 tracking-tight flex items-center gap-2">
+              <svg className="inline w-8 h-8 text-primary1 animate-pulse" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m4 0h-1v-4h-1m4 0h-1v-4h-1" /></svg>
+              The AI-Powered Edge
+            </h2>
+            <p className="text-lg text-primary2 dark:text-primary3/80 max-w-xl text-center mt-2">Unlock the future of study-abroad guidance with our upcoming AI-driven features. Experience the next level of personalized support!</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto mt-8">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+              <svg className="w-12 h-12 text-primary1 mb-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m4 0h-1v-4h-1m4 0h-1v-4h-1" /></svg>
+              <h3 className="text-xl font-semibold mb-2 text-primary2 dark:text-primary1">Personalized College Suggestions</h3>
+              <p className="text-gray-600 dark:text-primary3/80">AI matches you with the best-fit colleges based on your unique profile and aspirations.</p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+              <svg className="w-12 h-12 text-yellow-500 mb-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <h3 className="text-xl font-semibold mb-2 text-primary2 dark:text-primary1">Scholarship & Visa Success Predictions</h3>
+              <p className="text-gray-600 dark:text-primary3/80">Get data-driven predictions for scholarships and visa approvals to plan with confidence.</p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.9 }} className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+              <svg className="w-12 h-12 text-sky-500 mb-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4" /></svg>
+              <h3 className="text-xl font-semibold mb-2 text-primary2 dark:text-primary1">AI Chatbot (24/7)</h3>
+              <p className="text-gray-600 dark:text-primary3/80">Instant answers to your questions, anytime, with our intelligent AI-powered chatbot.</p>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1.1 }} className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+              <svg className="w-12 h-12 text-green-500 mb-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 7v4a1 1 0 001 1h3m10-5v4a1 1 0 001 1h3M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              <h3 className="text-xl font-semibold mb-2 text-primary2 dark:text-primary1">Application Dashboard</h3>
+              <p className="text-gray-600 dark:text-primary3/80">Track your applications, deadlines, and progress in one smart, easy-to-use dashboard.</p>
+            </motion.div>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/ui/SectionTitle';
+import { Link } from 'react-router-dom';
 
 // Team members data
 const teamMembers = [
@@ -113,7 +114,9 @@ const About = () => {
             >
               <h2 className="text-3xl font-bold text-primary2 dark:text-primary1 mb-6">Company Overview</h2>
               <p className="text-gray-700 dark:text-primary3/90 mb-4">
-                At Edumillenia, we specialize in helping students fulfill their academic dreams overseas. Based in Bangalore, our dedicated team offers personalized counseling, documentation help, and visa guidance.
+                We started Haridhi Education Consultancy with one simple belief: students deserve better guidance.<br/>
+                With Edumillenia, we've built a space where students and parents feel heard, supported, and empowered—where every piece of advice is honest, every plan is tailored, and every effort is made with your future in mind.<br/>
+                Whether you're just beginning to explore your options or preparing to take a big leap—we're right beside you.
               </p>
               <p className="text-gray-700 dark:text-primary3/90">
                 Since our founding in 2013, we have assisted over 5,000 students in securing admissions to prestigious universities worldwide. Our comprehensive approach covers every aspect of the study abroad journey, from university selection to post-arrival support.
@@ -130,17 +133,89 @@ const About = () => {
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-primary2 dark:text-primary1 mb-3">Vision</h3>
                 <p className="text-gray-700 dark:text-primary3/90 italic">
-                  "To empower every Indian student to explore global academic opportunities."
+                  To be the most trusted name in global education consulting by making complex decisions<br />
+                  easier, clearer, and more personal.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold text-primary2 dark:text-primary1 mb-3">Mission</h3>
-                <p className="text-gray-700 dark:text-primary3/90 italic">
-                  "Deliver trusted and transparent guidance through every step of the study abroad journey."
-                </p>
+                <ul className="text-gray-700 dark:text-primary3/90 italic list-disc pl-6 space-y-2">
+                  <li>To remove stress and guesswork from the study-abroad journey.</li>
+                  <li>To give students access to genuine, tech-smart, and transparent guidance.</li>
+                  <li>To use AI thoughtfully—to match students with the right programs based on who they really are.</li>
+                  <li>To walk with every student from confusion to clarity, and from ambition to opportunity.</li>
+                </ul>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Edumillenia Section */}
+      <section className="section bg-gradient-to-br from-primary3/10 via-white to-primary1/10 dark:from-primary2/60 dark:via-primary2/80 dark:to-primary3/20 py-16">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary2 dark:text-primary1 mb-8 text-center flex items-center justify-center gap-2">
+            <svg className="w-8 h-8 text-primary1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m4 0h-1v-4h-1m4 0h-1v-4h-1" /></svg>
+            Why Choose Edumillenia?
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-sky-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">AI Meets Understanding</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-green-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 7v4a1 1 0 001 1h3m10-5v4a1 1 0 001 1h3M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Global Reach, Local Roots</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-yellow-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">End-to-End Support</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-primary1 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 16h8M8 12h8m-8-4h8M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Built for Today's Students</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-pink-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Mentors Who've Been There</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-gray-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Transparent & Honest</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Can Expect Section */}
+      <section className="section bg-primary1/10 dark:bg-primary2/60 py-16">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary2 dark:text-primary1 mb-8 text-center flex items-center justify-center gap-2">
+            <svg className="w-8 h-8 text-primary1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+            What You Can Expect
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-primary1 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Students Come First</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-green-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Clarity Over Confusion</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-sky-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2a4 4 0 014-4h4m0 0V7a4 4 0 00-4-4H7a4 4 0 00-4 4v10a4 4 0 004 4h4" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Tech + Heart</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-yellow-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Support at Every Step</span>
+            </div>
+            <div className="bg-white dark:bg-primary2/80 rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+              <svg className="w-10 h-10 text-pink-500 mb-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+              <span className="font-semibold text-primary2 dark:text-primary1">Built With Purpose</span>
+            </div>
           </div>
         </div>
       </section>
@@ -209,60 +284,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Meet the Team */}
-      <section className="section bg-primary3/10 dark:bg-primary2/40">
-        <div className="container-custom">
-          <SectionTitle
-            title="Meet the Team"
-            subtitle="The experts behind our success"
-            centered
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-primary2/80 rounded-lg overflow-hidden shadow-md"
-              >
-                <div className="h-48 bg-primary1/30 flex items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-primary1/50 flex items-center justify-center text-4xl font-bold text-white">
-                    {member.name.charAt(0)}
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-primary2 dark:text-primary1">{member.name}</h3>
-                  <p className="text-primary1 mb-4">{member.role}</p>
-                  <p className="text-gray-600 dark:text-primary3/80 mb-4">{member.bio}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-gray-600 dark:text-primary3/70">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                      <span className="text-sm">{member.email}</span>
-                    </div>
-                    <a 
-                      href={member.linkedin} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-primary1 hover:text-primary2 dark:hover:text-primary3 transition-colors"
-                      aria-label={`${member.name}'s LinkedIn`}
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-primary1/20 dark:bg-primary2/80">
         <div className="container-custom text-center">
@@ -293,12 +314,12 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
-            <a href="/contact" className="btn btn-primary">
+            <Link to="/contact" className="btn btn-primary">
               Contact Us
-            </a>
-            <a href="/services" className="btn btn-secondary">
+            </Link>
+            <Link to="/services" className="btn btn-secondary">
               Explore Our Services
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
